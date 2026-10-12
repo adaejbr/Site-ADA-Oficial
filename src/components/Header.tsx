@@ -16,7 +16,7 @@ function Header(){
               <li><a href="">Nossa Missão</a></li>
               <li><a href="">Quem Somos</a></li>
               <li><a href="">Nossos serviços</a></li>
-              <li className="bg-primary p-2 rounded-xl text-secondary"><a href="">Entrar em Contato</a></li>
+              <li className="bg-primary px-4 py-3 rounded-xl text-secondary"><a href="">Entrar em Contato</a></li>
             </ul>
           </nav>
         </div>
