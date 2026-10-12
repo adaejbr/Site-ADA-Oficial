@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* 1. Declara a fonte localmente */
+@font-face {
+  font-family: 'Zico Display';
+  src: url('./src/assets/fonts/zico-display.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --color-primary: #C39A0E;
+  --color-secondary: #080725;
+
+  /* Adicionando a fonte personalizada ao tema */
+  --font-zico: 'Zico Display', sans-serif;
+}
