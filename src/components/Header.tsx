@@ -11,7 +11,7 @@ function Header(){
           </div>
 
           <nav className="text-primary ">
-            <ul className="flex items-center gap-6" >
+            <ul className="flex items-center gap-6 font-medium">
               <li><a href="">Início</a></li>
               <li><a href="">Nossa Missão</a></li>
               <li><a href="">Quem Somos</a></li>
