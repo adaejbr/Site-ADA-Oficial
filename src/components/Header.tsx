@@ -18,7 +18,7 @@ function Header(){
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
-          className="sm:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none z-50 cursor-pointer"
+          className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5 focus:outline-none z-50 cursor-pointer"
         >
           <span
             className={`h-0.5 w-6 bg-primary rounded-full transition-all duration-300 ease-in-out ${
@@ -38,7 +38,7 @@ function Header(){
         </button>
 
              
-          <nav className="text-primary hidden sm:block">
+          <nav className="text-primary hidden lg:block">
             <ul className="flex items-center gap-6 font-medium">
               <li><a href="">Início</a></li>
               <li><a href="">Nossa Missão</a></li>
@@ -54,12 +54,12 @@ function Header(){
 
           <nav
               aria-hidden={!menuOpen}
-              className={`sm:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+              className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
                       menuOpen
                         ? "mt-4 max-h-96 translate-y-0 opacity-100 pt-4 border-t border-primary/20"
                         : "mt-0 max-h-0 -translate-y-2 opacity-0 pt-0 border-t-0 pointer-events-none"
               }`}>
-            <ul className="flex flex-col gap-4 font-medium text-white px-2">
+            <ul className="flex flex-col gap-4 font-medium text-primary px-2">
               <li onClick={() => setMenuOpen(false)}><a href="">Início</a></li>
               <li onClick={() => setMenuOpen(false)}><a href="">Nossa Missão</a></li>
               <li onClick={() => setMenuOpen(false)}><a href="">Quem Somos</a></li>

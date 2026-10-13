@@ -1,19 +1,66 @@
 @import "tailwindcss";
 @import "@fontsource-variable/inter";
+@import "@fontsource/space-mono";
 
-/* 1. Declara a fonte localmente */
+@theme {
+  --breakpoint-xxsm: 10rem;
+  --breakpoint-xsm: 20rem;
+  --breakpoint-2xsm: 32rem;
+}
+
+@keyframes element-appear {
+  from{
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes element-slide-up {
+  from{
+    transform: translateY(10px);
+  }
+  
+  to {
+    transform: translateY(0);
+  }
+}
+
+.element-appear {
+  display: inline-block;
+  animation: element-appear 0.5s both;
+}
+
+.element-slide-up {
+  display: inline-block;
+  animation: element-slide-up 0.5s both;
+}
+
+.element-appear.element-slide-up {
+  animation:
+    element-appear 0.5s both,
+    element-slide-up 0.3s both;
+}
+
+
 @font-face {
   font-family: 'Zico Display';
-  src: url('./src/assets/fonts/zico-display.woff2') format('woff2');
+  src: url('../assets/fonts/zico-display.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @theme {
+  --color-default: #f9f5f1;
   --color-primary: #C39A0E;
   --color-secondary: #1E1939;
 
   /* Adicionando a fonte personalizada ao tema */
   --font-zico: 'Zico Display', sans-serif;
   --font-sans: 'Inter Variable', sans-serif;
+  --font-highlight: 'Space Mono', sans-serif;
 }
