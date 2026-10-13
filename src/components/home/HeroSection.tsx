@@ -54,7 +54,7 @@ function HeroSection(){
                     </div>
                 </div>
 
-                <img className="sm:h-full sm:object-contain word-slide-up" src={adahero} alt="Ada Hero Section" />
+                <img className="sm:h-full sm:object-contain element-slide-up" src={adahero} alt="Ada Hero Section" />
             </div>
         </section>
     )
