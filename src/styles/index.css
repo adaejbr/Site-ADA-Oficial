@@ -30,6 +30,9 @@
   }
 }
 
+
+
+
 .element-appear {
   display: inline-block;
   animation: element-appear 0.5s both;
@@ -47,11 +50,31 @@
 }
 
 
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-10px);
+
+  }
+
+}
+
+.float {
+  animation:
+    float 3s ease-in-out infinite;
+}
+
+
 @font-face {
   font-family: 'Zico Display';
   src: url('../assets/fonts/zico-display.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @theme {
