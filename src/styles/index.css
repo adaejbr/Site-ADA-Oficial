@@ -30,7 +30,19 @@
   }
 }
 
+@keyframes progress {
+    from {
+        width: 0%;
+    }
 
+    to {
+        width: 100%;
+    }
+}
+
+.animate-progress {
+    animation: progress 8s linear forwards;
+}
 
 
 .element-appear {
